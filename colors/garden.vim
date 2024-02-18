@@ -10,6 +10,18 @@ if exists("syntax_on")
 endif
 
 let g:colors_name = 'garden'
+let s:set_rainbow = {'gui': 0, 'term': 0}
+
+function s:resetGarden()
+    if s:set_rainbow.gui
+        unlet g:rainbow_conf.guifgs
+        let s:set_rainbow.gui = 0
+    endif
+    if s:set_rainbow.term
+        unlet g:rainbow_conf.ctermfgs
+        let s:set_rainbow.term = 0
+    endif
+endfunction
 
 
 hi Normal       gui=none      guifg=#ffffff   guibg=#394732     cterm=none      ctermfg=231  ctermbg=239
@@ -82,9 +94,17 @@ if exists('g:rainbow_active')
     let g:rainbow_conf = get(g:, 'rainbow_conf', {})
     if len(get(g:rainbow_conf, 'guifgs', [])) == 0
         let g:rainbow_conf.guifgs = ['#e69ecb', '#80e98a', '#ead15e', '#b7aee6']
+        let s:set_rainbow.gui = 1
     endif
     if len(get(g:rainbow_conf, 'ctermfgs', [])) == 0
         let g:rainbow_conf.ctermfgs = [175, 114, 179, 146]
+        let s:set_rainbow.term = 1
+    endif
+
+    if s:set_rainbow.gui || s:set_rainbow.term
+        augroup GardenRainbowReset
+            autocmd ColorSchemePre * ++once call s:resetGarden()
+        augroup END
     endif
 endif
 
