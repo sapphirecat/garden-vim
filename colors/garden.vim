@@ -29,7 +29,7 @@ hi Visual                                     guibg=#2c301f                     
 
 hi NonText      gui=none      guifg=#b0809c                     cterm=none      ctermfg=139
 hi EndOfBuffer  gui=none      guifg=#7a5a6c                     cterm=none      ctermfg=96
-hi SpecialKey   gui=bold      guifg=#6d6e69                     cterm=bold      ctermfg=245
+hi SpecialKey   gui=bold      guifg=#81827d                     cterm=bold      ctermfg=245
 hi Directory    gui=none      guifg=#8ff8c7                     cterm=none      ctermfg=122
 hi ErrorMsg     gui=none      guifg=#fafafa   guibg=#af4440     cterm=none      ctermfg=231  ctermbg=131
 hi WarningMsg   gui=bold      guifg=#d59a72                     cterm=bold      ctermfg=173
