@@ -68,7 +68,7 @@ hi PmenuThumb   gui=none      guifg=#fffcfe   guibg=#655761     cterm=none      
 hi WildMenu     gui=bold      guifg=#10050b   guibg=#a5d5bd     cterm=bold      ctermfg=233  ctermbg=115
 
 hi MatchParen                                 guibg=#877078                                  ctermbg=244
-hi Comment      gui=italic    guifg=#e6d8bc                     cterm=italic    ctermfg=187
+hi Comment      gui=none      guifg=#e6d8bc                     cterm=none      ctermfg=187
 hi Constant     gui=none      guifg=#aeea8e                     cterm=none      ctermfg=156
 hi Identifier   gui=none      guifg=#c99a8f                     cterm=none      ctermfg=174
 hi Function     gui=none      guifg=#96d1f2                     cterm=none      ctermfg=116
