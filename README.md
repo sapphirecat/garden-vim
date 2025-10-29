@@ -94,9 +94,9 @@ Green was kind of a random choice; the “Garden” concept defined a palette fr
 
 The only conceptually nearby schemes I was able to find were:
 
-- [marklar](https://vimcolorschemes.com/vim-scripts/marklar.vim/),
+- [marklar](https://github.com/vim-scripts/marklar.vim/),
   based on green chalkboards, with a much bluer background than garden
-- [tabula](https://vimcolorschemes.com/vim-scripts/tabula.vim/), based on marklar
+- [tabula](https://github.com/vim-scripts/tabula.vim/), based on marklar
 - [base16-atelier-seaside-light](https://base16.netlify.app/previews/base16-atelier-seaside-light),
   a light sea-green theme
 
